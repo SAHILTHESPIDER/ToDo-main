@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size:62.5%;    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    border: 2px solid rgb(47, 0, 255);
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #14026f, rgb(61, 2, 149));
+    
+}
+
+.Todo-application{
+    border: blue 2px solid;
+    width: 40%;
+    /* height: 50%; */
+    margin: 17.5rem auto ;
+    background-color: rgb(255, 255, 255);
+    border-radius:2rem;
+}
+
+
+.heading{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 4rem 2rem 2rem 2rem;
+}
+
+
+.heading img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+
+.heading h1{
+    margin-right: 1rem;
+    font-size: 3rem;
+}
+
+.task-container{
+    /* border: 2px solid red; */
+    /* width:100%; */
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(220, 220, 220, 0.612);
+    border-radius: 2rem;
+    margin:  2rem;
+    margin-bottom: 3rem;
+   
+}
+
+.task-container input{
+    height: 100%;
+    margin-left: .5rem;
+    width: 100%;
+    font-size: 2rem; 
+    border-radius: 2rem;
+    padding-left: 2rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    /* background-color: rgba(220, 220, 220, 0.612); */
+}
+
+.task-container button{
+    padding: 1rem 3rem;
+    /* margin-right: 2rem; */
+    font-size: 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: #ff680a;
+    color: #fff;
+}
+
+/* .todo-list{
+    /* border: #14026f solid 2px; */
+    /* height:inherit;
+    margin: 2rem 2rem;
+    width: 93%; */
+
+
+.todo-list ul li{
+    font-size:2rem;
+    margin:0 2rem;
+    padding:1.2rem 0.8rem 1.2rem 5rem;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+  
+  
+}
+
+.todo-list ul li::before{
+    content:'';
+    background-image: url("./images/unchecked.png");
+    height:2rem;
+    width: 2rem;
+    top: 1.2rem;
+    bottom: 2px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    left: .8rem;
+    
+}
+span
+{
+    content: 'X';
+    background: #ff680a;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem; 
+    margin-left: 2rem;
+    border-radius: 20%;
+    color: #fff;
+   
+    }
+
+ul li.checked{
+    color: red;
+    text-decoration: line-through;
+    
+
+}
+ul li.checked::before
+{
+background-image: url(images/checked.png);
+
+}
